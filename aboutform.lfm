@@ -1,0 +1,51 @@
+object FormAbout: TFormAbout
+  Left = 436
+  Height = 179
+  Top = 216
+  Width = 416
+  BorderStyle = bsDialog
+  Caption = 'About TextEditor'
+  ClientHeight = 179
+  ClientWidth = 416
+  Position = poMainFormCenter
+  LCLVersion = '2.2.0.4'
+  object LabelAbout: TLabel
+    Left = 16
+    Height = 59
+    Top = 8
+    Width = 229
+    Caption = 'TextEditor'
+    Font.Height = -48
+    Font.Name = 'Inter Tight'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object BtnClose: TButton
+    Left = 331
+    Height = 28
+    Top = 139
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Close'
+    OnClick = BtnCloseClick
+    TabOrder = 0
+  end
+  object BtnLicense: TButton
+    Left = 203
+    Height = 28
+    Top = 139
+    Width = 123
+    Anchors = [akRight, akBottom]
+    Caption = 'Show License'
+    OnClick = BtnLicenseClick
+    TabOrder = 1
+  end
+  object LblCopyright: TLabel
+    Left = 16
+    Height = 51
+    Top = 72
+    Width = 390
+    AutoSize = False
+    Caption = '(c) theonlyasdk 2024'#10'This application is licensed under the MIT License.'#10'Click the license button to see the full license'
+  end
+end
