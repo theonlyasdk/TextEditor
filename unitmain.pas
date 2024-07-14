@@ -72,26 +72,26 @@ type
     Separator3: TMenuItem;
     Separator4: TMenuItem;
     Separator5: TMenuItem;
-    SynBatSyn1: TSynBatSyn;
-    SynCppSyn1: TSynCppSyn;
-    SynCssSyn1: TSynCssSyn;
-    SynDiffSyn1: TSynDiffSyn;
-    SynFreePascalSyn1: TSynFreePascalSyn;
-    SynHTMLSyn1: TSynHTMLSyn;
-    SynIniSyn1: TSynIniSyn;
-    SynJavaSyn1: TSynJavaSyn;
-    SynJScriptSyn1: TSynJScriptSyn;
-    SynLFMSyn1: TSynLFMSyn;
+    SynBatSyn: TSynBatSyn;
+    SynCppSyn: TSynCppSyn;
+    SynCssSyn: TSynCssSyn;
+    SynDiffSyn: TSynDiffSyn;
+    SynFreePascalSyn: TSynFreePascalSyn;
+    SynHTMLSyn: TSynHTMLSyn;
+    SynIniSyn: TSynIniSyn;
+    SynJavaSyn: TSynJavaSyn;
+    SynJScriptSyn: TSynJScriptSyn;
+    SynLFMSyn: TSynLFMSyn;
     SynMultiSyn: TSynMultiSyn;
     SynPasSyn: TSynPasSyn;
-    SynPerlSyn1: TSynPerlSyn;
-    SynPHPSyn1: TSynPHPSyn;
-    SynPythonSyn1: TSynPythonSyn;
-    SynSQLSyn1: TSynSQLSyn;
-    SynTeXSyn1: TSynTeXSyn;
-    SynUNIXShellScriptSyn1: TSynUNIXShellScriptSyn;
+    SynPerlSyn: TSynPerlSyn;
+    SynPHPSyn: TSynPHPSyn;
+    SynPythonSyn: TSynPythonSyn;
+    SynSQLSyn: TSynSQLSyn;
+    SynTeXSyn: TSynTeXSyn;
+    SynUNIXShellScriptSyn: TSynUNIXShellScriptSyn;
     SynVBSyn: TSynVBSyn;
-    SynXMLSyn1: TSynXMLSyn;
+    SynXMLSyn: TSynXMLSyn;
     TextEdit: TSynEdit;
     procedure FontDialogClose(Sender: TObject);
     procedure FontDialogShow(Sender: TObject);
@@ -169,17 +169,17 @@ end;
 
 procedure TMainForm.MCppClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynCppSyn1;
+  TextEdit.Highlighter := SynCppSyn;
 end;
 
 procedure TMainForm.MCssClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynCssSyn1;
+  TextEdit.Highlighter := SynCssSyn;
 end;
 
 procedure TMainForm.MDiffClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynDiffSyn1;
+  TextEdit.Highlighter := SynDiffSyn;
 end;
 
 procedure TMainForm.FontDialogClose(Sender: TObject);
@@ -233,7 +233,7 @@ end;
 
 procedure TMainForm.MenuItem1Click(Sender: TObject);
 begin
-  TextEdit.Highlighter:=SynHTMLSyn1;
+  TextEdit.Highlighter:=SynHTMLSyn;
 end;
 
 procedure TMainForm.PopCutClick(Sender: TObject);
@@ -303,12 +303,12 @@ end;
 
 procedure TMainForm.MPhpClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynPHPSyn1;
+  TextEdit.Highlighter := SynPHPSyn;
 end;
 
 procedure TMainForm.MPerlClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynPerlSyn1;
+  TextEdit.Highlighter := SynPerlSyn;
 end;
 
 procedure TMainForm.MenuNewClick(Sender: TObject);
@@ -343,27 +343,27 @@ end;
 
 procedure TMainForm.MFreePascalClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynFreePascalSyn1;
+  TextEdit.Highlighter := SynFreePascalSyn;
 end;
 
 procedure TMainForm.MIniClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynIniSyn1;
+  TextEdit.Highlighter := SynIniSyn;
 end;
 
 procedure TMainForm.MJavaClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynJavaSyn1;
+  TextEdit.Highlighter := SynJavaSyn;
 end;
 
 procedure TMainForm.MJavaScriptClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynJScriptSyn1;
+  TextEdit.Highlighter := SynJScriptSyn;
 end;
 
 procedure TMainForm.MLFMClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynLFMSyn1;
+  TextEdit.Highlighter := SynLFMSyn;
 end;
 
 procedure TMainForm.MPascalClick(Sender: TObject);
@@ -373,32 +373,32 @@ end;
 
 procedure TMainForm.MPythonClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynPythonSyn1;
+  TextEdit.Highlighter := SynPythonSyn;
 end;
 
 procedure TMainForm.MShellClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynUNIXShellScriptSyn1;
+  TextEdit.Highlighter := SynUNIXShellScriptSyn;
 end;
 
 procedure TMainForm.MSqlClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynSQLSyn1;
+  TextEdit.Highlighter := SynSQLSyn;
 end;
 
 procedure TMainForm.MTexClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynTeXSyn1;
+  TextEdit.Highlighter := SynTeXSyn;
 end;
 
 procedure TMainForm.MWinBatClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynBatSyn1;
+  TextEdit.Highlighter := SynBatSyn;
 end;
 
 procedure TMainForm.MXMLClick(Sender: TObject);
 begin
-  TextEdit.Highlighter := SynXMLSyn1;
+  TextEdit.Highlighter := SynXMLSyn;
 end;
 
 procedure TMainForm.OpenDialogClose(Sender: TObject);
@@ -411,43 +411,43 @@ begin
   Text:=OpenDialog.FileName+' - TextEditor';
   if OpenedFileName.EndsWith('.fpc')
   or OpenedFileName.EndsWith('.pas') then
-        TextEdit.Highlighter:=SynFreePascalSyn1
+        TextEdit.Highlighter:=SynFreePascalSyn
   else if OpenedFileName.EndsWith('.py') then
-        TextEdit.Highlighter:=SynPythonSyn1
+        TextEdit.Highlighter:=SynPythonSyn
   else if OpenedFileName.EndsWith('.java') then
-        TextEdit.Highlighter:=SynJavaSyn1
+        TextEdit.Highlighter:=SynJavaSyn
   else if OpenedFileName.EndsWith('.php') then
-        TextEdit.Highlighter:=SynPHPSyn1
+        TextEdit.Highlighter:=SynPHPSyn
   else if OpenedFileName.EndsWith('.html')
        or OpenedFileName.EndsWith('.htm') then
-        TextEdit.Highlighter:=SynHTMLSyn1
+        TextEdit.Highlighter:=SynHTMLSyn
   else if OpenedFileName.EndsWith('.js') then
-        TextEdit.Highlighter:=SynJScriptSyn1
+        TextEdit.Highlighter:=SynJScriptSyn
   else if OpenedFileName.EndsWith('.cpp')
        or OpenedFileName.EndsWith('.c++')
        or OpenedFileName.EndsWith('.c') then
-        TextEdit.Highlighter:=SynCppSyn1
+        TextEdit.Highlighter:=SynCppSyn
   else if OpenedFileName.EndsWith('.css') then
-        TextEdit.Highlighter:=SynCssSyn1
+        TextEdit.Highlighter:=SynCssSyn
   else if OpenedFileName.EndsWith('.perl') then
-        TextEdit.Highlighter:=SynPerlSyn1
+        TextEdit.Highlighter:=SynPerlSyn
   else if OpenedFileName.EndsWith('.tex') then
-        TextEdit.Highlighter:=SynTeXSyn1
+        TextEdit.Highlighter:=SynTeXSyn
   else if OpenedFileName.EndsWith('.bat') then
-        TextEdit.Highlighter:=SynBatSyn1
+        TextEdit.Highlighter:=SynBatSyn
   else if OpenedFileName.EndsWith('.sql') then
-        TextEdit.Highlighter:=SynSQLSyn1
+        TextEdit.Highlighter:=SynSQLSyn
   else if OpenedFileName.EndsWith('.xml') then
-        TextEdit.Highlighter:=SynXMLSyn1
+        TextEdit.Highlighter:=SynXMLSyn
   else if OpenedFileName.EndsWith('.lfm') then
-        TextEdit.Highlighter:=SynLFMSyn1
+        TextEdit.Highlighter:=SynLFMSyn
   else if OpenedFileName.EndsWith('.diff')
        or OpenedFileName.EndsWith('.patch') then
-        TextEdit.Highlighter:=SynDiffSyn1
+        TextEdit.Highlighter:=SynDiffSyn
   else if OpenedFileName.EndsWith('.sh')
        or OpenedFileName.EndsWith('.zsh')
        or OpenedFileName.EndsWith('.bash') then
-        TextEdit.Highlighter:=SynUNIXShellScriptSyn1
+        TextEdit.Highlighter:=SynUNIXShellScriptSyn
 end;
 
 procedure TMainForm.TextEditChange(Sender: TObject);

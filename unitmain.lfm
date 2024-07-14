@@ -702,7 +702,7 @@ object MainForm: TMainForm
   object SynMultiSyn: TSynMultiSyn
     Enabled = False
     Schemes = <>
-    DefaultHighlighter = SynJavaSyn1
+    DefaultHighlighter = SynJavaSyn
     DefaultLanguageName = 'Text'
     Left = 222
     Top = 140
@@ -720,7 +720,7 @@ object MainForm: TMainForm
     Left = 122
     Top = 37
   end
-  object SynFreePascalSyn1: TSynFreePascalSyn
+  object SynFreePascalSyn: TSynFreePascalSyn
     Enabled = False
     CompilerMode = pcmObjFPC
     NestedComments = True
@@ -728,13 +728,13 @@ object MainForm: TMainForm
     Left = 392
     Top = 103
   end
-  object SynIniSyn1: TSynIniSyn
+  object SynIniSyn: TSynIniSyn
     DefaultFilter = 'INI Files (*.ini)|*.ini'
     Enabled = False
     Left = 557
     Top = 163
   end
-  object SynJavaSyn1: TSynJavaSyn
+  object SynJavaSyn: TSynJavaSyn
     DefaultFilter = 'Java Files (*.java)|*.java'
     Enabled = False
     CommentAttri.Foreground = clGreen
@@ -742,79 +742,79 @@ object MainForm: TMainForm
     Left = 476
     Top = 187
   end
-  object SynJScriptSyn1: TSynJScriptSyn
+  object SynJScriptSyn: TSynJScriptSyn
     Enabled = False
     Left = 504
     Top = 103
   end
-  object SynLFMSyn1: TSynLFMSyn
+  object SynLFMSyn: TSynLFMSyn
     DefaultFilter = 'Lazarus Form Files (*.lfm)|*.lfm'
     Enabled = False
     Left = 434
     Top = 195
   end
-  object SynPythonSyn1: TSynPythonSyn
+  object SynPythonSyn: TSynPythonSyn
     DefaultFilter = 'Python Files (*.py)|*.py'
     Enabled = False
     Left = 386
     Top = 122
   end
-  object SynUNIXShellScriptSyn1: TSynUNIXShellScriptSyn
+  object SynUNIXShellScriptSyn: TSynUNIXShellScriptSyn
     DefaultFilter = 'UNIX Shell Scripts (*.sh)|*.sh'
     Enabled = False
     Left = 573
     Top = 138
   end
-  object SynSQLSyn1: TSynSQLSyn
+  object SynSQLSyn: TSynSQLSyn
     DefaultFilter = 'SQL Files (*.sql)|*.sql'
     Enabled = False
     SQLDialect = sqlSybase
     Left = 579
     Top = 67
   end
-  object SynTeXSyn1: TSynTeXSyn
+  object SynTeXSyn: TSynTeXSyn
     DefaultFilter = 'TeX Files (*.tex)|*.tex'
     Enabled = False
     Left = 601
     Top = 106
   end
-  object SynBatSyn1: TSynBatSyn
+  object SynBatSyn: TSynBatSyn
     DefaultFilter = 'MS-DOS Batch Files (*.bat;*.cmd)|*.bat;*.cmd'
     Enabled = False
     Left = 485
     Top = 168
   end
-  object SynXMLSyn1: TSynXMLSyn
+  object SynXMLSyn: TSynXMLSyn
     DefaultFilter = 'XML Document (*.xml,*.xsd,*.xsl,*.xslt,*.dtd)|*.xml;*.xsd;*.xsl;*.xslt;*.dtd'
     Enabled = False
     WantBracesParsed = False
     Left = 582
     Top = 112
   end
-  object SynCppSyn1: TSynCppSyn
+  object SynCppSyn: TSynCppSyn
     DefaultFilter = 'C++ Files (*.c,*.cpp,*.h,*.hpp,*.hh)|*.c;*.cpp;*.h;*.hpp;*.hh'
     Enabled = False
     Left = 512
     Top = 125
   end
-  object SynCssSyn1: TSynCssSyn
+  object SynCssSyn: TSynCssSyn
     DefaultFilter = 'Cascading Stylesheets (*.css)|*.css'
     Enabled = False
     Left = 523
     Top = 177
   end
-  object SynDiffSyn1: TSynDiffSyn
+  object SynDiffSyn: TSynDiffSyn
     Enabled = False
     Left = 518
     Top = 170
   end
-  object SynPHPSyn1: TSynPHPSyn
+  object SynPHPSyn: TSynPHPSyn
     DefaultFilter = 'PHP Files (*.php,*.php3,*.phtml,*.inc)|*.php;*.php3;*.phtml;*.inc'
     Enabled = False
     Left = 522
     Top = 67
   end
-  object SynPerlSyn1: TSynPerlSyn
+  object SynPerlSyn: TSynPerlSyn
     DefaultFilter = 'Perl Files (*.pl,*.pm,*.cgi)|*.pl;*.pm;*.cgi'
     Enabled = False
     CommentAttri.FrameColor = clGreen
@@ -861,7 +861,7 @@ object MainForm: TMainForm
       OnClick = PopSelectAllClick
     end
   end
-  object SynHTMLSyn1: TSynHTMLSyn
+  object SynHTMLSyn: TSynHTMLSyn
     DefaultFilter = 'HTML Document (*.htm,*.html)|*.htm;*.html'
     Enabled = False
     Left = 199
