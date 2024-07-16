@@ -4,7 +4,7 @@ object MainForm: TMainForm
   Top = 149
   Width = 708
   Caption = 'New File - Text Editor'
-  ClientHeight = 470
+  ClientHeight = 464
   ClientWidth = 708
   Menu = MainMenu
   OnClose = FormClose
@@ -12,7 +12,7 @@ object MainForm: TMainForm
   LCLVersion = '2.2.0.4'
   inline TextEdit: TSynEdit
     Left = 0
-    Height = 470
+    Height = 464
     Top = 0
     Width = 708
     Align = alClient
@@ -794,6 +794,7 @@ object MainForm: TMainForm
   object SynCppSyn: TSynCppSyn
     DefaultFilter = 'C++ Files (*.c,*.cpp,*.h,*.hpp,*.hh)|*.c;*.cpp;*.h;*.hpp;*.hh'
     Enabled = False
+    SpaceAttri.Foreground = clBtnText
     Left = 512
     Top = 125
   end
